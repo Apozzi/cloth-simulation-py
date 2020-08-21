@@ -11,4 +11,5 @@ Link: https://en.wikipedia.org/wiki/Verlet_integration
 
 # How compile
 
-``` python cloth-simulation.py ```
+``` python3 cloth-simulation.py ```
+THIS SIMULATION ONLY WORKS WITH PYTHON 3!
