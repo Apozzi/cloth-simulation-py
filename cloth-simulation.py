@@ -73,7 +73,7 @@ def updateSticks():
 
 		distance = math.sqrt(dx * dx + dy * dy)
 		difference = stick.distancev
-		percent = (difference - distance) / 1000 ## idk this works?
+		percent = (difference - distance) / 500 ## idk this works?
 		print(" distance " + str(distance) )
 		print(" difference " + str(difference))
 		print(" percent " + str(percent))
