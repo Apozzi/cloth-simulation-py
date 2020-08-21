@@ -67,23 +67,23 @@ def updatePoints():
 
 
 def updateSticks():
-    for stick in sticks:
-        dx = stick.p1.x - stick.p0.x
-        dy = stick.p1.y - stick.p0.y
+	for stick in sticks:
+		dx = stick.p1.x - stick.p0.x
+		dy = stick.p1.y - stick.p0.y
 
-        distance = (dx * dx + dy * dy)**(1/2)
-        difference = stick.distancev
-        print(str(distance) + " , ")
-        print(str(difference) + " , ")
-        print(str(dx)  + " , ")
-        percent = ( distance - difference) / 500 ## idk this works?
-        adjustX = dx * percent
-        adjustY = dy * percent
+		distance = math.sqrt(dx * dx + dy * dy)
+		difference = stick.distancev
+		percent = (difference - distance) / 1000 ## idk this works?
+		print(" distance " + str(distance) )
+		print(" difference " + str(difference))
+		print(" percent " + str(percent))
+		adjustX = dx * percent
+		adjustY = dy * percent
 
-        stick.p0.x += adjustX
-        stick.p0.y += adjustY
-        stick.p1.x -= adjustX
-        stick.p1.y -= adjustY
+		stick.p0.x -= adjustX
+		stick.p0.y -= adjustY
+		stick.p1.x += adjustX
+		stick.p1.y += adjustY
 
 
 def renderPoint(x , y):
@@ -138,7 +138,6 @@ def showScreen():
 
 def mouseClick(button, state, x, y):
     if(button == GLUT_LEFT_BUTTON and state == GLUT_DOWN):
-        print(x)
         points[90].x -= 70
         points[90].y -= 70
 
