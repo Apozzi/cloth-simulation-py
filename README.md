@@ -15,4 +15,4 @@ Link: https://en.wikipedia.org/wiki/Verlet_integration
 
 ``` python3 cloth-simulation.py ```
 
-THIS SIMULATION ONLY WORKS WITH PYTHON 3! 
+THIS SIMULATION ONLY WORKS WITH PYTHON 3!
