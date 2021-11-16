@@ -6,7 +6,7 @@ Libs: PyOpenGL only for graphics.
 
 # About the method
 Basically the verlet method calculate the next position without using velocity calculation
-![velvet](https://wikimedia.org/api/rest_v1/media/math/render/svg/41ab6fd166ee416550c5b56342c5bf97bf95fba8)
+![velvet](https://adeveloper-image-host.s3.us-east-2.amazonaws.com/cloth-simulation.gif)
 
 Link: https://en.wikipedia.org/wiki/Verlet_integration
 
